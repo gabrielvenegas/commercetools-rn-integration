@@ -1,13 +1,14 @@
-import {ClientBuilder, Client} from '@commercetools/sdk-client-v2';
+import {ClientBuilder} from '@commercetools/sdk-client-v2';
 import {createApiBuilderFromCtpClient} from '@commercetools/platform-sdk';
 
-export const projectKey = 'removed';
-const oauthUri = 'https://auth.us-central1.gcp.commercetools.com';
-const baseUri = 'https://api.us-central1.gcp.commercetools.com';
+export const projectKey = ['demo'];
+const oauthUri = 'https://auth.europe-west1.gcp.commercetools.com';
+const baseUri = 'https://api.europe-west1.gcp.commercetools.com';
+
 const scopes = ['removed'];
 const credentials = {
-  clientId: 'removed',
-  clientSecret: 'removed',
+  clientId: ['removed'],
+  clientSecret: ['removed'],
 };
 
 const client = new ClientBuilder()
